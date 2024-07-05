@@ -10,8 +10,13 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-- task: UiPathRunJob@4
+- task: UiPathAssets@4
   inputs:
     orchestratorConnection: 'UiPath Connection'
-    processName: 'Webhook'
     folderName: 'MAB'
+    assetActionType: 'Delete'
+    csvFile: |
+      'name,type,value'
+      'example_asset1,text,value of the asset'
+      'example_asset2,integer,4232' 
+      'example_asset3,boolean,false'
