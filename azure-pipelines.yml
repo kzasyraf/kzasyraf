@@ -12,7 +12,7 @@ pool:
 steps:
 - task: UiPathRunJob@4
   inputs:
-    orchestratorConnection: 'UiPath Connection'
+    orchestratorConnection: 'UiPath Orchestrator Connection'
     processName: 'Test'
     priority: 'High'
     folderName: 'MAB'
