@@ -10,14 +10,9 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-- task: UiPathAssets@4
+- task: UiPathRunJob@4
   inputs:
     orchestratorConnection: 'UiPath Connection'
+    processName: 'Test'
     folderName: 'MAB'
-    assetActionType: 'Deploy'
-    csvFile: |
-      'name,type,value'
-      'example_asset1,text,value of the asset'
-      'example_asset2,integer,4232' 
-      'example_asset3,boolean,false'
 
