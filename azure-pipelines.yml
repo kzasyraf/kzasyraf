@@ -6,6 +6,9 @@
 trigger:
 - main
 
+pool:
+  vmImage: 'windows-latest'
+
 steps:
 - task: UiPathRunJob@4
   inputs:
