@@ -14,9 +14,10 @@ steps:
   inputs:
     orchestratorConnection: 'UiPath Connection'
     folderName: 'MAB'
-    assetActionType: 'Delete'
+    assetActionType: 'Deploy'
     csvFile: |
       'name,type,value'
       'example_asset1,text,value of the asset'
       'example_asset2,integer,4232' 
       'example_asset3,boolean,false'
+
