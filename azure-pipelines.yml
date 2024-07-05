@@ -14,5 +14,7 @@ steps:
   inputs:
     orchestratorConnection: 'UiPath Connection'
     processName: 'Test'
+    priority: 'High'
     folderName: 'MAB'
+    traceLevel: 'Information'
 
